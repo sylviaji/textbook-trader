@@ -1,0 +1,40 @@
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="jumbotron">
+                <h2>
+                    See what your classmates are buying
+                </h2>
+                <p>
+                    Here are all the textbooks people are looking to buy. If you don't see the textbook you are looking to sell,
+                </p>
+                <a href="/add-sell" class="btn btn-outline-secondary" role="button">Add a textbook to sell</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <table class="table">
+    <thead>
+    <tr>
+        <th scope="col">Title</th>
+        <th scope="col">ISBN</th>
+        <th scope="col">Price</th>
+        <th scope="col">Contact</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#each objs}}
+        <tr>
+            <td>{{this.title}}</td>
+            <td>{{this.isbn}}</td>
+            <td>{{this.price}}</td>
+            <td>{{this.contact}}</td>
+        </tr>
+    {{/each}}
+
+    </tbody>
+</table>
+</div>

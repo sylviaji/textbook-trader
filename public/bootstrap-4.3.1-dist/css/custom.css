@@ -1,0 +1,161 @@
+.container-fluid {
+    height: auto;
+}
+
+.navbar-brand {
+    background-color: #57068c;
+    margin: 5px 5px 5px 0px;
+    border-radius: 3px;
+}
+
+.navbar-nav {
+    padding: 10px;
+}
+
+#navbar-span1 {
+    padding-left: 10px;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+#navbar-span2 {
+    padding-right: 10px;
+    font-weight: lighter;
+    font-family: sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+.navbar-nav a {
+    font-size: 18px;
+}
+
+
+.btn-search {
+    color: #57068c;
+    border-color: #57068c;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+
+
+/* Source: https://parsleyjs.org/src/parsley.css */
+input.parsley-success,
+select.parsley-success,
+textarea.parsley-success {
+    color: #468847;
+    background-color: #DFF0D8;
+    border: 1px solid #D6E9C6;
+}
+
+input.parsley-error,
+select.parsley-error,
+textarea.parsley-error {
+    color: #B94A48;
+    background-color: #F2DEDE;
+    border: 1px solid #EED3D7;
+}
+
+.parsley-errors-list {
+    margin: 2px 0 3px;
+    padding: 0;
+    list-style-type: none;
+    font-size: 0.9em;
+    line-height: 0.9em;
+    opacity: 0;
+    color: #B94A48;
+
+    transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+}
+
+.parsley-errors-list.filled {
+    opacity: 1;
+}
+
+.table {
+    text-align: center;
+}
+
+.view img {
+    height: 400px
+}
+
+
+.carousel-caption {
+    padding-bottom: 3em ;
+}
+
+.carousel-btn {
+    color: #57068c;
+    border: 1px solid;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: whitesmoke;
+}
+
+.carousel-btn span {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.jumbotron {
+    background-image: url(https://cina.ca/wp-content/uploads/2018/09/watercolour-blog-header-purple.jpg);
+    height: 85%;
+    color: #330662;
+}
+
+#jumbotron-add {
+    background-image: url(https://i.pinimg.com/originals/45/89/55/4589552599bcf1438423b066723217d8.jpg);
+    height: 85%;
+    color: #330662;
+}
+
+.btn-outline-secondary{
+    font-size: 1.1em;
+    color: #8900e1;
+    border-color: #8900e1;
+    background-color: #f2f2f2;
+}
+
+.btn-outline-secondary:hover {
+    color: #f2f2f2;
+    background-color: #220337;
+}
+
+#register {
+    font-size: 1.2em;
+}
+
+.page-footer {
+    color: #f2f2f2;
+    background-color: #57068c;
+    text-align: center;
+}
+
+.page-footer p {
+    font-size: 1.2em;
+}
+
+.footer-copyright {
+    background-color: #8900e1;
+}
+
+.footer-copyright a {
+    color: #d6d6d6;
+}
+
+.error {
+    text-align: center;
+    margin: 150px;
+}
+
+.text-uppercase {
+    font-size: 1.1em;
+    color: #220337;
+}

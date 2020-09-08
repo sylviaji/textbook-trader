@@ -1,0 +1,38 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="jumbotron" id="jumbotron-add">
+                <h2>
+                    Add a textbook to sell
+                </h2>
+                <p>
+                    Enter title and ISBN of the book, as well as the price you would like to sell it at.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <form class="add-sell" action="/add-sell" method="POST" data-parsley-validate>
+                <label for="title">Title</label>
+                <input name="title" type="text" class="form-control" id="title" aria-describedby="title" placeholder="Enter textbook title" required>
+                <br>
+
+                <label for="ISBN">ISBN</label>
+                <input name="ISBN" type="text" class="form-control" id="ISBN" aria-describedby="ISBN" placeholder="Enter textbook ISBN" required data-parsley-minlength="10">
+                <br>
+
+                <label for="price">Price</label>
+                <input name="price" class="form-control" id="price" aria-describedby="price" placeholder="Enter textbook price" required data-parsley-min="0" data-parsley-type="number">
+                <br>
+                <button type="submit" class="btn btn-outline-secondary" value="validate">Submit</button>
+            </form>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+
+</div>
+
+

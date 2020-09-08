@@ -1,0 +1,15 @@
+
+<div class="container-fluid">
+    <div class="error">
+    <h1>ERROR - {{message}} </h1>
+    <p>An error has occurred. Redirecting you to the previous page...</p>
+    </div>
+</div>
+
+
+<!-- Source: https://stackoverflow.com/questions/44263400/redirect-to-another-node-js-page-after-a-period-of-time -->
+<script>
+    setTimeout(function () {
+        window.location = '{{prev}}'
+    }, 2500)
+</script>

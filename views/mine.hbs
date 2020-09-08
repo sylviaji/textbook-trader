@@ -1,0 +1,54 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="jumbotron">
+                <h2>
+                    {{username}} 's Homepage
+                </h2>
+                <p>
+                    View all the textbooks you have added here.
+                </p>
+                <a href="/logout" class="btn btn-outline-secondary" role="button" id="logout">Log out</a>
+            </div>
+        </div>
+    </div>
+
+    {{#if objs}}
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">Action</th>
+                <th scope="col">Title</th>
+                <th scope="col">ISBN</th>
+                <th scope="col">Price</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{#each objs}}
+                <tr>
+                    <td>{{this.action}}</td>
+                    <td>{{this.title}}</td>
+                    <td>{{this.isbn}}</td>
+                    <td>{{this.price}}</td>
+                </tr>
+
+            {{/each}}
+            </tbody>
+        </table>
+
+    {{else}}
+        <div class="row">
+            <div class="col-md-12">
+                    <h2>
+                        You haven't listed any textbook yet.
+                    </h2>
+                    <p>
+                        Would you like to add one now?
+                    </p>
+                    <a href="/add-sell" class="btn btn-outline-secondary" role="button">Add a textbook to sell</a>
+                    <a href="/add-buy" class="btn btn-outline-secondary" role="button">Add a textbook to buy</a>
+            </div>
+        </div>
+
+    {{/if}}
+</div>
